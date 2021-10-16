@@ -9,10 +9,9 @@ public class Model_user {
 	private String UserName;
 	private String HostName;
 	private String MemoryRAM;
-	ArrayList<String> Lista = new ArrayList<>();
 	
 	
-	public Model_user(String iPV4, String iPV6, String userName, String hostName, String memoryRAM,ArrayList<String> lista) {
+	public Model_user(String iPV4, String iPV6, String userName, String hostName, String memoryRAM) {
 		
 		super();
 		IPV4 = iPV4;
@@ -20,7 +19,6 @@ public class Model_user {
 		UserName = userName;
 		HostName = hostName;
 		MemoryRAM = memoryRAM;
-		Lista = lista;
 	}
 
 
@@ -72,17 +70,6 @@ public class Model_user {
 	public void setMemoryRAM(String memoryRAM) {
 		MemoryRAM = memoryRAM;
 	}
-
-
-	public ArrayList<String> getLista() {
-		return Lista;
-	}
-
-
-	public void setLista(ArrayList<String> lista) {
-		Lista = lista;
-	}
-	
-	
+		
 	
 }
